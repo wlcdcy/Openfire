@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+    <!-- Main plugin class -->
+    <class>org.wlcdcy.openfire.plugins.HelloPlugin</class>
+    <!-- Plugin meta-data -->
+    <name>Hello Plugin</name>
+    <description>This is an hello plugin.</description>
+    <author>wlcdcy</author>
+    <version>1.0.2</version>
+    <date>01/09/2015</date>
+    <minServerVersion>3.9.0</minServerVersion>
+    
+
+    <!-- Admin console entries -->
+    <adminconsole>
+        <tab id="tab-server">
+            <sidebar id="sidebar-server-settings">
+                <item id="hello" name="Hello Jersey" url="hello.jsp"
+                     description="Click to manage the service that allows to configure the Openfire over Hello Jersey RESTFul API" />
+            </sidebar>
+        </tab>
+    </adminconsole>
+</plugin>
